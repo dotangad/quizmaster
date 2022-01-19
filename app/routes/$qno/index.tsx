@@ -53,7 +53,7 @@ export default function Index() {
       ) : (
         <>
           <div
-            className="text-4xl px-20 leading-[150%]"
+            className="text-3xl px-20 leading-[150%]"
             dangerouslySetInnerHTML={{ __html: question.text }}
           />
           {question.media && (

@@ -35,11 +35,11 @@ export default function Index() {
         dangerouslySetInnerHTML={{ __html: question.answer.text }}
       />
       {question.answer.media && (
-        <div className="flex-1">
+        <div className="flex-1 flex items-center">
           <img
             src={question.answer.media}
             alt="media"
-            className="h-full w-auto"
+            className="h-[50vh] w-auto"
           />
         </div>
       )}
