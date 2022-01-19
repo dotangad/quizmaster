@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-group:focus-within label {
+    @apply text-exun-light;
+  }
+
+  .input-group label {
+    @apply text-xs font-bold uppercase text-gray-400 mb-3 transition;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    @apply border-2 border-gray-bg focus:border-exun focus:outline-none rounded-lg p-3 w-full;
+  }
+
+  .input-group .error {
+    @apply text-xs text-red-500;
+  }
+}
+
+body > div,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.debug {
+  @apply border border-black;
+}
