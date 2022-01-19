@@ -28,7 +28,7 @@ export default function Index() {
   });
 
   return (
-    <div className="bg-exun-dark text-white w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-y-20 p-10 overflow-y-auto">
+    <div className="bg-exun-dark text-white w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-y-10 p-10 overflow-y-auto">
       <div className="font-extrabold text-6xl">{question.qno}</div>
       <div
         className="text-4xl px-20"
@@ -39,7 +39,7 @@ export default function Index() {
           <img
             src={question.answer.media}
             alt="media"
-            className="h-[50vh] w-auto"
+            className="h-[65vmin] w-auto"
           />
         </div>
       )}
