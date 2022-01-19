@@ -30,7 +30,10 @@ export default function Index() {
   return (
     <div className="bg-exun-dark text-white w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-y-20 p-10 overflow-y-auto">
       <div className="font-extrabold text-6xl">{question.qno}</div>
-      <div className="text-4xl px-20">{question.answer.text}</div>
+      <div
+        className="text-4xl px-20"
+        dangerouslySetInnerHTML={{ __html: question.answer.text }}
+      />
       {question.answer.media && (
         <div className="flex-1">
           <img

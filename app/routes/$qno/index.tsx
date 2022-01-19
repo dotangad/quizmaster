@@ -52,7 +52,10 @@ export default function Index() {
         </>
       ) : (
         <>
-          <div className="text-4xl px-20">{question.text}</div>
+          <div
+            className="text-4xl px-20 leading-[150%]"
+            dangerouslySetInnerHTML={{ __html: question.text }}
+          />
           {question.media && (
             <div className="text-sm font-bold text-right w-full">
               Press <code>m</code> to see media
